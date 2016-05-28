@@ -9,8 +9,10 @@ One such notable pressure sensor is Measurement Specialities MS5611 series of pr
 
 In this project, a full function barometric altimeter was implemented using a Flip32 (Naze32 clone) flight controller board with installed MS5611 pressure sensor, an SSD1306 graphic OLED screen on I2C, and a rotary encoder used in consumer products for volume etc. setting. A single LiPo cell powers the system, with about 40mA current draw.
 
-There is QNH compensation, and it is possible to learn the local QNH value from a nearby airport, dial it into the device, and obtain the MSL altitude in feet. In exactly the same way as a conventional altimeter is used.
+There is QNH adjustment. It is possible to learn the local QNH value from a nearby airport, dial it into the device, and obtain the MSL altitude in feet. In exactly the same way as a conventional altimeter is used.
 
-The project requires u8glib ARM port, and compiled with GCC ARM Embedded toolchain, easily downloadable from Launchpad. 
+Operation: At power up, information about the device is displayed briefly. Then altitude in ft. is displayed in the center of the screen, measured local pressure in hPa and temperature in Deg. C. at the top, and set QNH at the bottom. To adjust QNH, press and turn the dial. The QNH set screen appears. At the top are the altitude in ft. and m. in MSL, and in the main part, ANH value is displayed. If you know QNH, you can dial it while keeping the dial pressed in, or if you know the altitude, you can dial that. Upon releasing the dial, the device returns to displaying the altitude screen. Double click takes you into the information screen and back out of the information screen.
 
+The project requires u8glib ARM port, and was compiled with GCC ARM Embedded toolchain, easily downloadable from Launchpad. 
 
+See the full write-up, complete with photos and video of operation in my blog: http://aviatorahmet.blogspot.com
