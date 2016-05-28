@@ -15,5 +15,5 @@ Operation: At power up, an information screen is briefly displayed. Then it retu
 
 The project requires u8glib ARM port, and was compiled with GCC ARM Embedded toolchain, easily downloadable from Launchpad. A binary is provided for direct burning into a Naze32, Flip 32 or similar. Elctrical connections are *very* simple: OLED display connects to the provided I2C terminals, encoder to GPIOA, A signal:PA1, B signal:PA3, click signal:PA0. Internal pull ups of STM32 are used for simplicity, and no smoothing capacitors are needed.
 
-See the full write-up, complete with photos and video of operation in my blog: http://aviatorahmet.blogspot.com
+See the full write-up, complete with photos and video of operation in my blog: http://aviatorahmet.blogspot.com/2016/05/altimeter-with-qnh-setting-diy.html
 
